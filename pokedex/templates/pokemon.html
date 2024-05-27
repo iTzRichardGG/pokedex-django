@@ -115,72 +115,79 @@
     
         </div>
         
-        <!--estadisticas del pokemon-->
-        <div class="card w-50 h-75 p-5 {{pokemon.color}} text-light border-0"> 
+        <!--stats del pokemon-->
+        <div class="card w-50 h-75 p-5 {{pokemon.color}} text-light border-0 "> 
     
             <!--HP-->
-            <div class="d-flex justify-content-evenly align-items-center mb-4">
-                <p class="m-0">HP</p>
-                <div class="d-flex jus">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="m-0 ">HP</p>
+                <div class="d-flex justify-content-evenly align-items-center" style="min-width: 75%;" >
                     <p class="m-0">{{pokemon.stats.hp}}</p>
-                    <div class="progress transparent " style="min-width: 70%">
-                        <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.hp_percentage}}%;" aria-valuenow="{{pokemon.stats.hp}}" aria-valuemin="1" aria-valuemax="255"></div>
+                    <div class="progress transparent" style="min-width: 80%">
+                        <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.hp_percentage}}%;" aria-valuenow="{{pokemon.stats.hp}}" aria-valuemin="1" aria-valuemax="200"></div>
                     </div>
                 </div>
             </div>
-    
-            <!--Ataque-->
+
+            <!--Attack-->
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <p class="m-0">Attack</p>
-                <p class="m-0">{{pokemon.stats.attack}}</p>
-                <div class="progress transparent" style="min-width: 70%;">
-                    <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.attack_percentage}}%;" aria-valuenow="{{pokemon.stats.attack}}" aria-valuemin="5" aria-valuemax="190"></div>
+                <p class="m-0 ">Attack</p>
+                <div class="d-flex justify-content-evenly align-items-center" style="min-width: 75%;" >
+                    <p class="m-0">{{pokemon.stats.attack}}</p>
+                    <div class="progress transparent" style="min-width: 80%">
+                        <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.attack_percentage}}%;" aria-valuenow="{{pokemon.stats.attack}}" aria-valuemin="1" aria-valuemax="200"></div>
+                    </div>
                 </div>
             </div>
-    
-            <!--Defensa-->
+
+            <!--Defense-->
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <p class="m-0">Defense</p>
-                <p class="m-0">{{pokemon.stats.defense}}</p>
-                <div class="progress transparent" style="min-width: 70%;">
-                    <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.defense_percentage}}%;" aria-valuenow="{{pokemon.stats.defense}}" aria-valuemin="5" aria-valuemax="230"></div>
+                <p class="m-0 ">Defense</p>
+                <div class="d-flex justify-content-evenly align-items-center" style="min-width: 75%;" >
+                    <p class="m-0">{{pokemon.stats.defense}}</p>
+                    <div class="progress transparent" style="min-width: 80%">
+                        <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.defense_percentage}}%;" aria-valuenow="{{pokemon.stats.defense}}" aria-valuemin="1" aria-valuemax="200"></div>
+                    </div>
                 </div>
             </div>
-    
-            <!--Ataque especial-->
+
+            <!--Special Attack-->
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <p class="m-0">Special attack</p>
-                <p class="m-0">{{pokemon.stats.special_attack}}</p>
-                <div class="progress transparent" style="min-width: 70%;">
-                    <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.special_attack_percentage}}%;" aria-valuenow="{{pokemon.stats.special_attack}}" aria-valuemin="1" aria-valuemax="194"></div>
+                <p class="m-0 ">Special Attack</p>
+                <div class="d-flex justify-content-evenly align-items-center" style="min-width: 75%;" >
+                    <p class="m-0">{{pokemon.stats.special_attack}}</p>
+                    <div class="progress transparent" style="min-width: 80%">
+                        <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.special_attack_percentage}}%;" aria-valuenow="{{pokemon.stats.special_attack}}" aria-valuemin="1" aria-valuemax="100"></div>
+                    </div>
                 </div>
             </div>
-    
-            <!--Defensa especial-->
+
+            <!--Special Defense-->
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <p class="m-0">Special defense</p>
-                <p class="m-0">{{pokemon.stats.special_defense}}</p>
-                <div class="progress transparent" style="min-width: 70%;">
-                    <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{ pokemon.special_defense_percentage}}%;" aria-valuenow="{{pokemon.stats.special_defense}}" aria-valuemin="20" aria-valuemax="230"></div>
+                <p class="m-0 ">Special Defense</p>
+                <div class="d-flex justify-content-evenly align-items-center" style="min-width: 75%;" >
+                    <p class="m-0">{{pokemon.stats.special_defense}}</p>
+                    <div class="progress transparent" style="min-width: 80%">
+                        <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.special_defense_percentage}}%;" aria-valuenow="{{pokemon.stats.special_defense}}" aria-valuemin="1" aria-valuemax="200"></div>
+                    </div>
                 </div>
             </div>
-            
-            <!--Velocidad-->
+
+            <!--Speed-->
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <p class="m-0">Speed</p>
-                <p class="m-0">{{pokemon.stats.speed}}</p>
-                <div class="progress transparent" style="min-width: 70%;">
-                    <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{ pokemon.speed_percentage }}%;" aria-valuenow="{{pokemon.stats.speed}}" aria-valuemin="5" aria-valuemax="200"></div>
+                <p class="m-0 ">Speed</p>
+                <div class="d-flex justify-content-evenly align-items-center" style="min-width: 75%;" >
+                    <p class="m-0">{{pokemon.stats.speed}}</p>
+                    <div class="progress transparent" style="min-width: 80%">
+                        <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.speed_percentage}}%;" aria-valuenow="{{pokemon.stats.speed}}" aria-valuemin="5" aria-valuemax="200"></div>
+                    </div>
                 </div>
             </div>
-    
+
             <!--Total-->
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <p class="m-0">Tot</p>
-                <p class="m-0">{{pokemon.total}}</p>
-                <div class="progress transparent" style="min-width: 70% ">
-                    <div class="progress-bar card {{pokemon.color}} border-secondary" role="progressbar" style="width: {{pokemon.total_percentage}}%;" aria-valuenow="{{pokemon.total}}" aria-valuemin="180" aria-valuemax="780"></div>
-                </div>
+            <div class="d-flex justify-content-center align-items-center mt-4 ">
+                <h5 class="me-3">Total</h5>
+                <h5>{{pokemon.total}}</h3>
             </div>
     
         </div>
