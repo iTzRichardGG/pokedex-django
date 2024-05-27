@@ -1,0 +1,53 @@
+
+.transparent{
+  background-color: rgba(255, 255, 255, 0.397);
+}
+
+/*colores para cartas de acuerdo al color del pokemon*/
+
+.card.blue{
+  background-color: #13537577  ;
+}
+
+.card.green{
+  background-color: #1a5c1656  ;
+}
+
+.card.white{
+  background-color: #bcc5c57d  ;
+}
+
+.card.gray{
+  background-color: #61646448 ;
+}
+
+.card.brown{
+  background-color: #54331669 ;
+}
+
+.card.yellow{
+  background-color: #ebce5a5f ;
+}
+
+.card.red{
+  background-color: #ec71636d ;
+}  
+
+.card.pink{
+  background-color: #f1948a6f   ;
+}
+
+.card.purple{
+  background-color: #240b2d6f  ;
+}
+
+.card.black{
+  background-color: #090d1276   ;
+}
+
+
+
+
+
+
+
